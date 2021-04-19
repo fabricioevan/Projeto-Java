@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Controle de Contêiner</title>
+<link rel="icon" href="imagens/conteinerico.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Criar novo conteiner</h1>
+	<form name="frmConteiner" action="insert">
+		<table>
+			<tr>
+				<td><input type="text" name="cliente" placeholder="Cliente"
+					class="caixa1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="numero"
+					placeholder="Numero Ex:TEST1234567" class="caixa1"></td>
+			</tr>
+			<tr>
+				<td><select name="tipo" class="caixa1">
+						<option selected disabled value="">Tipo</option>
+						<option>20</option>
+						<option>40</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><select name="status" class="caixa1">
+						<option selected disabled value="">Status</option>
+						<option>Cheio</option>
+						<option>Vazio</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><select name="categoria" class="caixa1">
+						<option selected disabled value="">Categoria</option>
+						<option>Importação</option>
+						<option>Exportação</option>
+				</select></td>
+			</tr>
+
+		</table>
+		<input type="button" value="Adicionar" class="Botao1"
+			onclick="validar()">
+	</form>
+	<script src="scripts/validador.js"></script>
+
+</body>
+</html>
